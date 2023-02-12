@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemBehavior : MonoBehaviour
+public class ItemBehavior_04 : MonoBehaviour
 {
     public GameBehavior gameManager;
     
@@ -16,8 +16,8 @@ public class ItemBehavior : MonoBehaviour
         {
             Destroy(this.transform.parent.gameObject);
             Debug.Log("Item collected!");
-
             gameManager.Items += 1;
+            //
         }
     }
 }

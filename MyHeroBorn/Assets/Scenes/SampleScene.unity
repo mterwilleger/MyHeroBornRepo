@@ -5201,7 +5201,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3510043372301888530, guid: 52910f689a334f142920fe142a65b36f, type: 3}
   m_PrefabInstance: {fileID: 2629707658899182340}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &370503014
+--- !u!114 &370503019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5210,7 +5210,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 370503008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b6c0d090bdec264aa4fa5ea16b63263, type: 3}
+  m_Script: {fileID: 11500000, guid: ff24ba61183b5e34c9ea2c22629d72ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
@@ -5609,7 +5609,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 637662678}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &584375655
 ParticleSystemRenderer:
@@ -10529,8 +10529,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 584375654}
   - {fileID: 820182735}
+  - {fileID: 584375654}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10943,7 +10943,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 08ecbc9e6f29fd647935f9f2455e1103, type: 2}
     - target: {fileID: 4521032971821155502, guid: 26be5472fa8434843b50eaffeade67a2, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4521032971821155502, guid: 26be5472fa8434843b50eaffeade67a2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16258,7 +16258,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 73852153832041572, guid: 991f70099e24e2840833e31da69d64b8, type: 3}
   m_PrefabInstance: {fileID: 5835173155186738305}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1020253156
+--- !u!114 &1020253161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16267,7 +16267,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1020253150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b6c0d090bdec264aa4fa5ea16b63263, type: 3}
+  m_Script: {fileID: 11500000, guid: a37f80b7ce01b2f40babc4c80b19fd6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
@@ -16968,7 +16968,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1199102345}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b6c0d090bdec264aa4fa5ea16b63263, type: 3}
+  m_Script: {fileID: 11500000, guid: 26085a15162dd3e498c61b6ff4ec24a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
@@ -23429,6 +23429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rotateSpeed: 75
+  itemScale: 0
   jumpVelocity: 2
   distanceToGround: 0.1
   groundLayer:
