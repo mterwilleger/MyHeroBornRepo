@@ -5210,7 +5210,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 370503008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff24ba61183b5e34c9ea2c22629d72ce, type: 3}
+  m_Script: {fileID: 11500000, guid: a37f80b7ce01b2f40babc4c80b19fd6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
@@ -11360,6 +11360,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+--- !u!114 &1020253162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020253150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5867aab1012c11a4fa7cbdf65d86d075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1001 &1020993406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16822,19 +16835,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8611680415774175704, guid: 4e762fa20290ece4183e13e6d9ff7598, type: 3}
   m_PrefabInstance: {fileID: 1141115999}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1180063494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180063492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b6c0d090bdec264aa4fa5ea16b63263, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
 --- !u!95 &1180063495
 Animator:
   serializedVersion: 5
@@ -16855,6 +16855,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1180063499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180063492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abacaccba1f0dde448adc0acbe55e61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+--- !u!114 &1180063500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180063492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a37f80b7ce01b2f40babc4c80b19fd6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1 &1200997428
 GameObject:
   m_ObjectHideFlags: 0
@@ -17157,11 +17183,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321115792}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1328909750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2345682133919923362, guid: 10714155ea814424989578a39d6ed005, type: 3}
+  m_PrefabInstance: {fileID: 2345682134845583636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1328909751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2345682133919923363, guid: 10714155ea814424989578a39d6ed005, type: 3}
   m_PrefabInstance: {fileID: 2345682134845583636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1328909756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328909750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a37f80b7ce01b2f40babc4c80b19fd6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1 &1354090595
 GameObject:
   m_ObjectHideFlags: 0
@@ -23412,7 +23456,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2345682133919923368, guid: 10714155ea814424989578a39d6ed005, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 10714155ea814424989578a39d6ed005, type: 3}
 --- !u!1001 &2629707658899182340
 PrefabInstance:

@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemBehavior_02 : MonoBehaviour
+public class ResizePickupBehavior : MonoBehaviour
 {
     public GameBehavior gameManager;
-    
+
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameBehavior>();
@@ -14,10 +14,7 @@ public class ItemBehavior_02 : MonoBehaviour
     {
         if(collision.gameObject.name == "Player")
         {
-            Destroy(this.transform.parent.gameObject);
-            Debug.Log("Item collected!");
-            gameManager.Items += 1;
-            //Jumping Code
+            collision.gameObject.transform.localScale += new Vector3(0.75f, 0.75f, 0.75f);
         }
     }
 }

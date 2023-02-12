@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemBehavior_04 : MonoBehaviour
+public class Health_Pickup_Behavior : MonoBehaviour
 {
     public GameBehavior gameManager;
     
@@ -14,10 +14,7 @@ public class ItemBehavior_04 : MonoBehaviour
     {
         if(collision.gameObject.name == "Player")
         {
-            Destroy(this.transform.parent.gameObject);
-            Debug.Log("Item collected!");
-            gameManager.Items += 1;
-            //
+            gameManager.HP +=1;
         }
     }
 }

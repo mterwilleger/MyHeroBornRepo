@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemBehavior_01 : MonoBehaviour
+public class ItemBehavior : MonoBehaviour
 {
     public GameBehavior gameManager;
     
