@@ -5213,6 +5213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6c0d090bdec264aa4fa5ea16b63263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1001 &385620485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10882,6 +10883,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60cd9dff213d6024d93be6371b757cfe, type: 3}
+--- !u!1 &796342200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 796342202}
+  - component: {fileID: 796342201}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &796342201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796342200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9715d3335b6dc24a9491cbbbc133b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showWinScreen: 0
+  labelText: Collect all 4 items and win your freedom!
+  maxItems: 4
+--- !u!4 &796342202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796342200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25.378407, y: 8.632394, z: -7.1094394}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &820182734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16222,6 +16270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6c0d090bdec264aa4fa5ea16b63263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1001 &1020993406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16884,6 +16933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6c0d090bdec264aa4fa5ea16b63263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!95 &1180063495
 Animator:
   serializedVersion: 5
@@ -16904,6 +16954,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!1 &1199102345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4521032971821155503, guid: 26be5472fa8434843b50eaffeade67a2, type: 3}
+  m_PrefabInstance: {fileID: 820182734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1199102350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199102345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6c0d090bdec264aa4fa5ea16b63263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1 &1200997428
 GameObject:
   m_ObjectHideFlags: 0
@@ -23361,6 +23429,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rotateSpeed: 75
+  jumpVelocity: 2
+  distanceToGround: 0.1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  bullet: {fileID: 432929760068558248, guid: 5c65bb04f7d22154a86f5161202f5677, type: 3}
+  bulletSpeed: 100
 --- !u!1001 &2629707658899182340
 PrefabInstance:
   m_ObjectHideFlags: 0
