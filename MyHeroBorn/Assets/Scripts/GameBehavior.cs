@@ -8,7 +8,7 @@ public class GameBehavior : MonoBehaviour
     public bool showWinScreen = false;
     public bool showLossScreen = false;
     //UI Code
-    public string labelText = "Collect all 4 items and win your freedom!";
+    public string labelText = "Shelve all 4 books and win!";
     public int maxItems = 4;
 
     private int _itemsCollected = 0;
@@ -21,13 +21,13 @@ public class GameBehavior : MonoBehaviour
             Debug.LogFormat("Items: {0}", _itemsCollected);
             if(_itemsCollected >= maxItems)
             {
-                labelText = "You've found all the items!";
+                labelText = "You've shelved all the books!";
                 showWinScreen = true;
                 Time.timeScale = 0f;
             }
             else
             {
-                labelText = "Item found, only " + (maxItems - _itemsCollected) + " more to go!";
+                labelText = "Book shelved, only " + (maxItems - _itemsCollected) + " more to go!";
             }
         }
     }
