@@ -18683,7 +18683,6 @@ GameObject:
   - component: {fileID: 599140698}
   - component: {fileID: 599140697}
   - component: {fileID: 599140696}
-  - component: {fileID: 599140699}
   m_Layer: 8
   m_Name: Basement_Level
   m_TagString: Untagged
@@ -18742,7 +18741,7 @@ MeshCollider:
   m_GameObject: {fileID: 599140694}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -18797,23 +18796,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599140694}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &599140699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599140694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 43241ef572657774a93d35a0a5edce71, type: 2}
-  isGlobal: 0
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!1 &604054270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3432693226728558639, guid: e8fdddcfe6bbce444aff1122997577f4, type: 3}
@@ -46858,7 +46840,7 @@ Transform:
   m_GameObject: {fileID: 1321115792}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6, y: -1.66, z: 1.77}
-  m_LocalScale: {x: 0.2, y: 1, z: -0.64}
+  m_LocalScale: {x: 0.21, y: 1, z: -0.64}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1703041533}

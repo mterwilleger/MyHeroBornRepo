@@ -36,6 +36,7 @@ public class GameBehavior : MonoBehaviour
             {
                 ProgressText.text = "You've shelved all the books!";
                 WinButton.gameObject.SetActive(true);
+                StartCoroutine(EndScreen());
             }
             else
             {
@@ -60,5 +61,9 @@ public class GameBehavior : MonoBehaviour
         SceneManager.LoadScene(0);
         Time.timeScale = 1.0f;
     }
-    
+    IEnumerator EndScreen()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }
