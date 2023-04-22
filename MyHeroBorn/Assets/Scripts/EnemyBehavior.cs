@@ -9,6 +9,8 @@ public class EnemyBehavior : MonoBehaviour
     public Transform patrolRoute;
     public List<Transform> locations;
 
+    public AudioSource source;
+
     private int locationIndex = 0;
     private NavMeshAgent agent;
 
@@ -27,7 +29,10 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -63,14 +68,15 @@ public class EnemyBehavior : MonoBehaviour
         if(other.name == "Player")
         {
             agent.destination = player.position;
-            Debug.Log("Patron Detected - Initiate Conversation!");
+            source.Play();
+            //Debug.Log("Patron Detected - Initiate Conversation!");
         }
     }
     void OnTriggerExit(Collider other)
     {
         if(other.name == "Player")
         {
-            Debug.Log("Patron is out of range, resume Duties");
+            //Debug.Log("Patron is out of range, resume Duties");
         }
     }
     void OnCollisionEnter(Collision collision)
